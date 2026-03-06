@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>PopPop Claus | Your Hometown Santa</title>
+<title>PopPop Claus - Your Hometown Santa</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -18,33 +16,29 @@ tailwind.config = {
 theme: {
 extend: {
 colors: {
-christmasRed:"#8B0000",
-forestGreen:"#1B5E20",
-goldAccent:"#D4AF37"
+christmasRed: "#8B0000",
+forestGreen: "#1B5E20",
+goldAccent: "#D4AF37"
 },
-fontFamily:{
-heading:["Playfair Display","serif"],
-body:["Inter","sans-serif"]
+fontFamily: {
+heading: ["Playfair Display", "serif"],
+body: ["Inter", "sans-serif"]
 }
 }
 }
 }
 </script>
-
-<style>
-html{scroll-behavior:smooth;}
-.aspect-portrait{aspect-ratio:3/4;}
-.aspect-landscape{aspect-ratio:4/3;}
-</style>
-
 </head>
 
 <body class="font-body bg-gray-50 text-gray-800">
 
+<!-- NAVBAR -->
 <header class="bg-white shadow-md sticky top-0 z-50">
 <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-<h1 class="font-heading text-2xl text-christmasRed">🎅 PopPop Claus</h1>
+<h1 class="font-heading text-2xl text-christmasRed">
+🎅 PopPop Claus
+</h1>
 
 <nav class="hidden md:flex space-x-6 font-medium">
 <a href="#services" class="hover:text-christmasRed">Services</a>
@@ -62,24 +56,25 @@ Book Now
 </header>
 
 <!-- HERO -->
+<section class="relative bg-forestGreen text-white">
 
-<section class="relative text-white">
-
-<div class="absolute inset-0">
-<img src="hero_01.jpg" class="w-full h-full object-cover brightness-50">
+<div class="absolute inset-0 opacity-20">
+<img src="images/hero_01.jpg" class="w-full h-full object-cover">
 </div>
 
-<div class="relative max-w-7xl mx-auto px-6 py-40 text-center">
+<div class="relative max-w-7xl mx-auto px-6 py-32 text-center">
 
-<h2 class="font-heading text-5xl md:text-6xl mb-6">
+<h2 class="font-heading text-4xl md:text-6xl mb-6">
 Your Hometown Santa
 </h2>
 
-<p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-Bring the magic of Christmas to your event with PopPop Claus — a professional real-bearded Santa spreading joy across East Tennessee.
+<p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+Bring the magic of Christmas to your event with PopPop Claus —
+a professional real-bearded Santa spreading holiday joy.
 </p>
 
-<a href="#contact" class="bg-goldAccent text-black px-8 py-4 rounded-lg text-lg font-semibold hover:scale-105 transition">
+<a href="#contact"
+class="bg-goldAccent text-black px-8 py-4 rounded-lg text-lg font-semibold hover:scale-105 transition">
 Book Your Visit
 </a>
 
@@ -87,7 +82,6 @@ Book Your Visit
 </section>
 
 <!-- SERVICES -->
-
 <section id="services" class="max-w-7xl mx-auto px-6 py-20">
 
 <h3 class="font-heading text-4xl text-center text-christmasRed mb-14">
@@ -96,27 +90,33 @@ Santa Services
 
 <div class="grid md:grid-cols-3 gap-10">
 
-<div class="bg-white rounded-xl shadow-lg p-8 text-center">
-<i class="fa-solid fa-camera text-4xl text-goldAccent mb-4"></i>
+<div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition">
+<div class="text-4xl text-goldAccent mb-4">
+<i class="fa-solid fa-camera"></i>
+</div>
 <h4 class="font-heading text-2xl mb-3">Photo Sessions</h4>
 <p class="text-gray-600">
-Perfect for holiday photoshoots with families and businesses capturing magical Christmas memories.
+Perfect for holiday photoshoots with families, children, and businesses.
 </p>
 </div>
 
-<div class="bg-white rounded-xl shadow-lg p-8 text-center">
-<i class="fa-solid fa-gifts text-4xl text-goldAccent mb-4"></i>
-<h4 class="font-heading text-2xl mb-3">Private Visits & Parties</h4>
+<div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition">
+<div class="text-4xl text-goldAccent mb-4">
+<i class="fa-solid fa-gifts"></i>
+</div>
+<h4 class="font-heading text-2xl mb-3">Private Visits</h4>
 <p class="text-gray-600">
-Bring Santa directly to your home, party, or corporate event.
+Make your Christmas party unforgettable with a personal visit from Santa.
 </p>
 </div>
 
-<div class="bg-white rounded-xl shadow-lg p-8 text-center">
-<i class="fa-solid fa-people-group text-4xl text-goldAccent mb-4"></i>
-<h4 class="font-heading text-2xl mb-3">Parades & Public Events</h4>
+<div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition">
+<div class="text-4xl text-goldAccent mb-4">
+<i class="fa-solid fa-people-group"></i>
+</div>
+<h4 class="font-heading text-2xl mb-3">Community Events</h4>
 <p class="text-gray-600">
-Perfect for parades, festivals, and community Christmas events.
+Perfect for parades, tree lightings, festivals, and holiday gatherings.
 </p>
 </div>
 
@@ -124,12 +124,11 @@ Perfect for parades, festivals, and community Christmas events.
 </section>
 
 <!-- ABOUT -->
-
 <section id="about" class="bg-white py-20">
 
 <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-<img src="Santa_and_family.jpg" class="rounded-xl shadow-lg">
+<img src="images/Santa_and_family.jpg" class="rounded-xl shadow-lg">
 
 <div>
 
@@ -138,11 +137,11 @@ Meet PopPop Claus
 </h3>
 
 <p class="mb-4 text-gray-700">
-Brandt Jones — lovingly known as PopPop Claus — is a real-bearded professional Santa dedicated to bringing the magic of Christmas to families throughout East Tennessee.
+Brandt Jones, lovingly known as PopPop Claus, is a real-bearded professional Santa dedicated to bringing the spirit of Christmas to families and communities.
 </p>
 
 <p class="text-gray-700">
-From home visits to community events, PopPop Claus embodies the true spirit of Christmas.
+From cozy home visits to large community events, PopPop Claus delivers authentic Christmas magic for children and adults alike.
 </p>
 
 </div>
@@ -151,57 +150,44 @@ From home visits to community events, PopPop Claus embodies the true spirit of C
 </section>
 
 <!-- GALLERY -->
-
-<section id="gallery" class="bg-gray-100 py-20">
-
-<div class="max-w-7xl mx-auto px-6">
+<section id="gallery" class="max-w-7xl mx-auto px-6 py-20">
 
 <h3 class="font-heading text-4xl text-center text-christmasRed mb-14">
-Holiday Moments
+Santa Gallery
 </h3>
 
-<div class="grid md:grid-cols-3 gap-8">
+<div class="grid md:grid-cols-3 gap-6">
 
-<div class="aspect-portrait overflow-hidden rounded-xl shadow-lg">
-<img src="Santa_and_puppy.jpg" class="w-full h-full object-cover">
-</div>
+<img src="images/Santa_at_the_house.jpg" class="rounded-xl shadow-md object-cover w-full h-80">
 
-<div class="aspect-landscape overflow-hidden rounded-xl shadow-lg">
-<img src="Santa_storytime.jpg" class="w-full h-full object-cover">
-</div>
+<img src="images/Santa_storytime.jpg" class="rounded-xl shadow-md object-cover w-full h-80">
 
-<div class="aspect-portrait overflow-hidden rounded-xl shadow-lg">
-<img src="Santa_says_hello.jpg" class="w-full h-full object-cover">
-</div>
+<img src="images/Santa_says_hello.jpg" class="rounded-xl shadow-md object-cover w-full h-80">
 
-<div class="aspect-portrait overflow-hidden rounded-xl shadow-lg">
-<img src="Santa_says_hello_02.jpg" class="w-full h-full object-cover">
-</div>
+<img src="images/Santa_and_family.jpg" class="rounded-xl shadow-md object-cover w-full h-80">
 
-<div class="aspect-landscape overflow-hidden rounded-xl shadow-lg">
-<img src="Santa_at_the_house.jpg" class="w-full h-full object-cover">
-</div>
+<img src="images/Santa_and_puppy.jpg" class="rounded-xl shadow-md object-cover w-full h-80">
 
-<div class="aspect-portrait overflow-hidden rounded-xl shadow-lg">
-<img src="Santa_baby_01.jpg" class="w-full h-full object-cover">
-</div>
+<img src="images/hero_02.jpg" class="rounded-xl shadow-md object-cover w-full h-80">
 
 </div>
 
-</div>
 </section>
 
-<!-- HERO 2 IMAGE ABOVE BOOKING -->
+<!-- HERO IMAGE ABOVE BOOKING -->
+<section class="bg-white py-12">
 
-<section class="max-w-6xl mx-auto px-6 py-10">
-<img src="hero_02.jpg" class="rounded-xl shadow-xl">
+<div class="max-w-3xl mx-auto px-6">
+<img src="images/hero_02.jpg"
+class="rounded-xl shadow-xl mx-auto max-h-[420px] object-cover w-full">
+</div>
+
 </section>
 
 <!-- TESTIMONIALS -->
-
 <section id="testimonials" class="bg-forestGreen text-white py-20">
 
-<div class="max-w-4xl mx-auto text-center px-6">
+<div class="max-w-4xl mx-auto px-6 text-center">
 
 <h3 class="font-heading text-4xl mb-10">
 What Families Are Saying
@@ -209,63 +195,68 @@ What Families Are Saying
 
 <div id="testimonialSlider" class="bg-white text-gray-800 rounded-xl p-10 shadow-xl">
 
-<div class="testimonial">
+<p id="testimonialText" class="text-lg italic mb-6"></p>
 
-<p class="italic mb-6">
-“PopPop Claus made our Pancakes with Santa event absolutely magical! The kids were thrilled, parents loved him, and the photos were incredible.”
-</p>
-
-<p class="font-semibold text-christmasRed">
-— Pancakes with Santa Event Organizer
-</p>
-
-</div>
-
-<div class="testimonial hidden">
-
-<p class="italic mb-6">
-Poppop Claus embodies the true qualities of the real Santa. Giving the kids and adults a lifetime experience. He took time with everyone equally. He read The Night Before Christmas and some adults were in tears. Everyone kept talking about what a wonderful Santa he was after he left.
-</p>
-
-<p class="font-semibold text-christmasRed">
-— Tami S. (Verified Review)
-</p>
-
-</div>
-
-<div class="testimonial hidden">
-
-<p class="italic mb-6">
-He kept over 200 children and parents enthralled for the hours he was with us! Each child felt seen and heard. Our Pancakes with Santa event gave him an A++++ rating.
-</p>
-
-<p class="font-semibold text-christmasRed">
-— Sharon D.
-</p>
+<p id="testimonialAuthor" class="font-semibold text-christmasRed"></p>
 
 </div>
 
 </div>
-
-</div>
-
 </section>
 
-<!-- CONTACT -->
+<script>
+const testimonials = [
+{
+text:`PopPop Claus made our Pancakes with Santa event absolutely magical! The kids were thrilled and the photos were incredible.`,
+author:"— Event Organizer"
+},
+{
+text:`PopPop Claus embodies the true qualities of Santa. He gave our kids and adults an unforgettable Christmas experience.`,
+author:"— Tami S. (Dec 7, 2025)"
+},
+{
+text:`He kept over 200 children and parents enthralled! Everyone rated him A++++.`,
+author:"— Sharon D. (Jan 14, 2025)"
+}
+]
 
+let index = 0
+
+function showTestimonial(){
+document.getElementById("testimonialText").innerText = testimonials[index].text
+document.getElementById("testimonialAuthor").innerText = testimonials[index].author
+index = (index + 1) % testimonials.length
+}
+
+showTestimonial()
+setInterval(showTestimonial,6000)
+</script>
+
+<!-- CONTACT -->
 <section id="contact" class="max-w-5xl mx-auto px-6 py-20">
 
 <h3 class="font-heading text-4xl text-center text-christmasRed mb-12">
 Book PopPop Claus
 </h3>
 
-<form id="contactForm" class="bg-white shadow-xl rounded-xl p-10 space-y-6">
+<form class="bg-white shadow-xl rounded-xl p-10 space-y-6">
 
-<input id="name" placeholder="Name" class="w-full border rounded-lg p-3">
-<input id="email" placeholder="Email" class="w-full border rounded-lg p-3">
-<textarea id="message" rows="5" placeholder="Message" class="w-full border rounded-lg p-3"></textarea>
+<div>
+<label class="block font-medium mb-1">Name</label>
+<input type="text" class="w-full border rounded-lg p-3">
+</div>
 
-<button class="w-full bg-christmasRed text-white py-3 rounded-lg font-semibold hover:bg-red-800 transition">
+<div>
+<label class="block font-medium mb-1">Email</label>
+<input type="email" class="w-full border rounded-lg p-3">
+</div>
+
+<div>
+<label class="block font-medium mb-1">Message</label>
+<textarea rows="5" class="w-full border rounded-lg p-3"></textarea>
+</div>
+
+<button class="w-full bg-christmasRed text-white py-3 rounded-lg font-semibold hover:bg-red-800">
 Send Message
 </button>
 
@@ -274,16 +265,27 @@ Send Message
 </section>
 
 <!-- FOOTER -->
-
 <footer class="bg-gray-900 text-gray-300 py-10">
 
-<div class="max-w-7xl mx-auto px-6 flex justify-between items-center flex-wrap gap-6">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+
+<div>
+<h4 class="font-heading text-xl text-white mb-3">
+Service Area
+</h4>
 
 <p>
-Serving Knoxville, Sevierville, Pigeon Forge, Maryville and surrounding East Tennessee communities.
+Serving East Tennessee including Knoxville, Sevierville, Pigeon Forge, Maryville, and surrounding communities.
 </p>
+</div>
 
-<div class="flex gap-6 text-2xl">
+<div class="text-center md:text-right">
+
+<h4 class="font-heading text-xl text-white mb-3">
+Contact
+</h4>
+
+<div class="flex justify-center md:justify-end gap-6 text-2xl">
 
 <a href="mailto:poppopclaus@yahoo.com" class="hover:text-goldAccent">
 <i class="fa-solid fa-envelope"></i>
@@ -297,36 +299,13 @@ Serving Knoxville, Sevierville, Pigeon Forge, Maryville and surrounding East Ten
 
 </div>
 
+</div>
+
+<div class="text-center text-sm text-gray-500 mt-8">
+© 2026 PopPop Claus — Your Hometown Santa
+</div>
+
 </footer>
-
-<script>
-
-const testimonials=document.querySelectorAll(".testimonial")
-let current=0
-
-setInterval(()=>{
-
-testimonials[current].classList.add("hidden")
-
-current=(current+1)%testimonials.length
-
-testimonials[current].classList.remove("hidden")
-
-},6000)
-
-document.getElementById("contactForm").addEventListener("submit",function(e){
-
-e.preventDefault()
-
-const name=document.getElementById("name").value
-const email=document.getElementById("email").value
-const message=document.getElementById("message").value
-
-window.location.href=`mailto:poppopclaus@yahoo.com?subject=Santa Booking Request&body=Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`
-
-})
-
-</script>
 
 </body>
 </html>
